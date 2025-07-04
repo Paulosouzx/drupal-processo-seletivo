@@ -1,0 +1,6 @@
+name: 'Saudação'
+type: module
+description: 'Bloco de saudação com Bom dia ou Boa tarde'
+core_version_requirement: ^10
+package: Custom
+version: 1.0

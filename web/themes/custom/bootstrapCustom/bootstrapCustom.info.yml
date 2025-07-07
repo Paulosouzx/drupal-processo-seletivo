@@ -1,0 +1,19 @@
+name: Meu Bootstrap5 Custom :)))
+type: theme
+description: "Subtema baseado no bootstrap5 com cores personalizadas."
+core_version_requirement: ^10
+base theme: bootstrap5
+
+libraries:
+  - meu-tema/global-styling
+
+regions:
+  header: Header
+  nav_branding: "Navigation branding region"
+  nav_main: "Main navigation region"
+  nav_additional: "Additional navigation region (eg search form, social icons, etc)"
+  breadcrumb: Breadcrumbs
+  content: "Main content"
+  sidebar_first: "Sidebar first"
+  sidebar_second: "Sidebar second"
+  footer: Footer

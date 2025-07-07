@@ -1,0 +1,11 @@
+services:
+  cv_external_api.sender:
+    class: Drupal\cv_external_api\Service\CvExternalApiSender
+    arguments:
+      - "@http_client"
+      - "@config.factory"
+      - "@logger.channel.cv_external_api"
+
+  logger.channel.cv_external_api:
+    parent: logger.channel_base
+    arguments: ["cv_external_api"]

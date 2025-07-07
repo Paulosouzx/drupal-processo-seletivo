@@ -1,0 +1,12 @@
+<?php
+
+use Drupal\node\NodeInterface;
+
+/**
+ * Implementa hook_entity_insert().
+ */
+function cv_external_api_entity_insert(\Drupal\Core\Entity\EntityInterface $entity) {
+  if ($entity instanceof NodeInterface && $entity->bundle() === 'cv') {
+    \Drupal::service('cv_external_api.sender')->send($entity);
+  }
+}

@@ -1,0 +1,6 @@
+cv_external_api.settings:
+  title: "Configurações da API CV"
+  description: "Configurações para a integração externa de CV."
+  parent: system.admin_config_services
+  route_name: cv_external_api.settings
+  weight: 100

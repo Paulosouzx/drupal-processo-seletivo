@@ -1,0 +1,9 @@
+cv_external_api.settings:
+  path: "/admin/config/services/cv-external-api"
+  defaults:
+    _form: '\Drupal\cv_external_api\Form\SettingsForm'
+    _title: "Configurações da API CV"
+  requirements:
+    _permission: "administer site configuration"
+  options:
+    _admin_route: TRUE
